@@ -1,0 +1,12 @@
+schema: workflow/2022.04
+name: Workflow1
+settings:
+  lambda_timeout: 202
+  no_trace_history: true
+triggers:
+- id: hi_71HqWd1
+steps:
+- namespace: code
+  runtime: python3.12
+  uses: "./code/entry.py"
+
